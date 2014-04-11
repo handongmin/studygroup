@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/createacmain"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <EditText
+        android:id="@+id/creat_pwch_edit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/creat_phone_edit"
+        android:layout_centerVertical="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="100dp"
+        android:background="@drawable/btnstyle1"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/createButton"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/createButton"
+        android:text="뒤로가기" />
+
+    <EditText
+        android:id="@+id/creat_pw_edit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/creat_pwch_edit"
+        android:layout_alignLeft="@+id/creat_pwch_edit"
+        android:layout_marginBottom="42dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/creat_phone_edit"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/creat_pwch_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/creat_id_edit"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/creat_pw_edit"
+        android:layout_alignLeft="@+id/creat_pw_edit"
+        android:layout_alignRight="@+id/creat_pw_edit"
+        android:layout_marginBottom="37dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/regionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/creat_phone_edit"
+        android:layout_alignRight="@+id/creat_phone_edit"
+        android:layout_below="@+id/creat_phone_edit"
+        android:layout_marginTop="41dp"
+        android:background="@drawable/btnstyle2"
+        android:text="관심지역등록" />
+
+    <Button
+        android:id="@+id/createButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/regionButton"
+        android:layout_below="@+id/regionButton"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btnstyle1"
+        android:text="가입하기" />
+
+</RelativeLayout>
